@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DV – Innovation Made Simple</title>
+  <meta name="description" content="DV creates AI-powered websites and digital tools to simplify your work and grow your business.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="logo">DV</div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="main-nav">
+      <a href="#home"     onclick="closeNav()">Home</a>
+      <a href="#programs" onclick="closeNav()">Programs</a>
+      <a href="#websites" onclick="closeNav()">Websites</a>
+      <a href="#pricing"  onclick="closeNav()">Pricing</a>
+      <a href="#contact"  onclick="closeNav()">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section id="home" class="hero fade-in">
+    <h1>Don't fall behind in <span>technology</span></h1>
+    <p>Choose DV programs to simplify your work and accelerate your business online.</p>
+    <a href="#websites" class="btn">Explore Services</a>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="about fade-in">
+    <h2>About DV</h2>
+    <p>
+      DV was built with one mission: make technology and digital presence accessible for everyone.
+      We believe simple software and smart website design solve big problems.
+      Our goal is to provide modern tools and AI-powered websites that make your work easier, faster, and more impactful.
+    </p>
+  </section>
+
+  <!-- ===== Ticker ===== -->
+  <section class="quotes-ticker" aria-hidden="true">
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <span>"Innovation made simple."</span>
+        <span>"Your work, powered by DV."</span>
+        <span>"Smart tools for modern challenges."</span>
+        <span>"Custom websites designed for your business."</span>
+        <span>"We build, you grow."</span>
+        <span>"Your ideas, brought to life online."</span>
+        <span>"Web design and automation in one place."</span>
+        <span>"Create, grow, and automate with DV."</span>
+        <span>"Professional websites. Real results."</span>
+        <span>"The future of your business starts here."</span>
+        <!-- Duplicate for seamless loop -->
+        <span>"Innovation made simple."</span>
+        <span>"Your work, powered by DV."</span>
+        <span>"Smart tools for modern challenges."</span>
+        <span>"Custom websites designed for your business."</span>
+        <span>"We build, you grow."</span>
+        <span>"Your ideas, brought to life online."</span>
+        <span>"Web design and automation in one place."</span>
+        <span>"Create, grow, and automate with DV."</span>
+        <span>"Professional websites. Real results."</span>
+        <span>"The future of your business starts here."</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Website Creation ===== -->
+  <section id="websites" class="web-offer fade-in">
+    <div class="web-offer-header">
+      <h2>Need a Website? <span class="accent">You're in the Right Place</span></h2>
+      <p class="lead">
+        We build your website with <strong>Artificial Intelligence</strong> — fast, modern, and optimized.
+        You approve the design; we handle everything else.
+      </p>
+      <div class="badges">
+        <span>⚡ Fast Delivery</span>
+        <span>💰 Affordable Price</span>
+        <span>📱 Fully Responsive</span>
+        <span>🔒 Secure & Reliable</span>
+      </div>
+      <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:8px;">
+        <a href="#contact" class="btn">Request a Free Demo</a>
+        <a href="#pricing" class="btn ghost">View Pricing</a>
+      </div>
+    </div>
+
+    <!-- Process Steps -->
+    <div class="flow">
+      <div class="flow-step">
+        <div class="num">1</div>
+        <h3>Quick Brief</h3>
+        <p>Tell us your business, colors, and goals in minutes.</p>
+      </div>
+      <div class="flow-step">
+        <div class="num">2</div>
+        <h3>AI Draft</h3>
+        <p>We generate the first design using AI — fast.</p>
+      </div>
+      <div class="flow-step">
+        <div class="num">3</div>
+        <h3>Review</h3>
+        <p>We fine-tune text, images, and sections to your liking.</p>
+      </div>
+      <div class="flow-step">
+        <div class="num">4</div>
+        <h3>Launch</h3>
+        <p>We connect your domain and publish the final version.</p>
+      </div>
+      <div class="flow-step">
+        <div class="num">5</div>
+        <h3>No Domain Budget?</h3>
+        <p>We offer a free hosting option to get you started.</p>
+        <button class="learn-more-btn" onclick="openPopup()">Learn More</button>
+      </div>
+    </div>
+
+    <!-- Highlights -->
+    <div class="highlights">
+      <div class="highlight-card">
+        <h4>Modern Design</h4>
+        <p>Smooth animations, clean typography, and conversion-focused layouts built for results.</p>
+      </div>
+      <div class="highlight-card">
+        <h4>Built-in SEO</h4>
+        <p>Optimized structure, meta tags, and fast performance included on every project.</p>
+      </div>
+      <div class="highlight-card">
+        <h4>Human Support</h4>
+        <p>We guide you every step of the way and make quick updates whenever you need them.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Pricing ===== -->
+  <section id="pricing" class="pricing-section fade-in">
+    <span class="section-tag">Web Development Plans</span>
+    <h2>Transparent Pricing. Zero Surprises.</h2>
+    <p class="sub">Choose the plan that fits your business today. You can always scale up as you grow.</p>
+
+    <div class="plans-grid">
+
+      <!-- Starter -->
+      <div class="plan-card">
+        <div class="plan-medal">🥉</div>
+        <div class="plan-name">Starter</div>
+        <div class="plan-tagline">Perfect for small businesses starting online</div>
+        <div class="plan-price">
+          <span class="currency">$</span>
+          <span class="amount">699</span>
+          <span class="plus">+</span>
+        </div>
+        <div class="plan-delivery">⏱ Delivery: 5–7 business days</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li>Professional website design</li>
+          <li>Up to 5 sections</li>
+          <li>Mobile-friendly (fully responsive)</li>
+          <li>Contact form</li>
+          <li>WhatsApp integration</li>
+          <li>Google Maps embed</li>
+          <li>Social media links</li>
+          <li>Basic SEO</li>
+          <li>1 revision round</li>
+        </ul>
+        <a href="#contact" class="plan-cta outlined">Schedule a Free Consultation</a>
+      </div>
+
+      <!-- Business (featured) -->
+      <div class="plan-card featured">
+        <div class="popular-badge">Most Popular</div>
+        <div class="plan-medal">🥈</div>
+        <div class="plan-name">Business</div>
+        <div class="plan-tagline">Ideal for growing businesses</div>
+        <div class="plan-price">
+          <span class="currency">$</span>
+          <span class="amount">1,299</span>
+          <span class="plus">+</span>
+        </div>
+        <div class="plan-delivery">⏱ Delivery: 7–14 business days</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li class="inherited">Everything in Starter</li>
+          <li>Up to 10 pages</li>
+          <li>Photo gallery</li>
+          <li>Google Reviews integration</li>
+          <li>Advanced contact forms</li>
+          <li>SEO optimization</li>
+          <li>Google Analytics setup</li>
+          <li>3 revision rounds</li>
+        </ul>
+        <a href="#contact" class="plan-cta solid">Schedule a Free Consultation</a>
+      </div>
+
+      <!-- Premium -->
+      <div class="plan-card">
+        <div class="plan-medal">🥇</div>
+        <div class="plan-name">Premium</div>
+        <div class="plan-tagline">Complete solution for serious businesses</div>
+        <div class="plan-price">
+          <span class="currency"></span>
+          <span class="amount" style="font-size:32px;line-height:1.2;">Custom</span>
+          <span class="plus"></span>
+        </div>
+        <div class="plan-delivery">⏱ Delivery: 2–4 weeks</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li class="inherited">Everything in Business</li>
+          <li>Client portal</li>
+          <li>User accounts & login</li>
+          <li>Database integration</li>
+          <li>Admin dashboard</li>
+          <li>AI automation options</li>
+          <li>Custom features on request</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="#contact" class="plan-cta outlined">Request a Quote</a>
+      </div>
+    </div>
+
+    <!-- Additional Services -->
+    <div class="add-services fade-in">
+      <h3>Additional Services</h3>
+      <table class="services-table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Logo Design</td>               <td class="price-cell">$150</td></tr>
+          <tr><td>Domain Setup</td>              <td class="price-cell">$25 / year</td></tr>
+          <tr><td>Hosting Setup</td>             <td class="price-cell">$20 / month</td></tr>
+          <tr><td>Business Email</td>            <td class="price-cell">$10 / month</td></tr>
+          <tr><td>AI Chatbot</td>               <td class="price-cell">$300</td></tr>
+          <tr><td>Online Store</td>              <td class="price-cell">From $800</td></tr>
+          <tr><td>Custom Software</td>           <td class="price-cell">Quote Required</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== Programs ===== -->
+  <section id="programs" class="programs">
+    <h2 class="fade-in">AI Programs Designed to Simplify Your Work</h2>
+    <p class="section-sub">Explore the tools created by DV to make technology work for you.</p>
+    <div class="loader-container">
+      <div class="loader">
+        <span></span><span></span><span></span>
+      </div>
+      <p class="no-programs">No programs available yet. Check back soon.</p>
+    </div>
+  </section>
+
+  <!-- ===== Trust ===== -->
+  <section class="trust fade-in">
+    <h2>Why Choose DV?</h2>
+    <div class="trust-grid">
+      <div class="trust-card">🔒 Secure downloads</div>
+      <div class="trust-card">✅ No hidden fees</div>
+      <div class="trust-card">🤝 Support included</div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="contact fade-in">
+    <h2>Let's Build Something Together</h2>
+    <p>Email us at <a href="mailto:dvsocialai@gmail.com">dvsocialai@gmail.com</a></p>
+    <p>We'll respond within 24 hours and schedule a free consultation.</p>
+    <a href="mailto:dvsocialai@gmail.com" class="btn">Send Us a Message</a>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© 2026 DV – Innovation made simple.</p>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="terms.html">Terms of Service</a> |
+      <a href="refunds.html">Refund Policy</a>
+    </div>
+  </footer>
+
+  <!-- ===== Free Hosting Popup ===== -->
+  <div id="hostingPopup" class="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+    <div class="popup-content">
+      <button class="close-btn" onclick="closePopup()" aria-label="Close">&times;</button>
+      <h3 id="popupTitle">Free Hosting Option</h3>
+      <p>
+        Starting small? No problem. We offer an alternative plan where your website can be hosted
+        for free using AI-integrated tools and smart deployment methods — perfect for new businesses
+        that want to launch without paying for a domain right away.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
