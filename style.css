@@ -900,3 +900,63 @@ footer .footer-links a:hover { color: #fff; }
     padding: 24px 18px;
   }
 }
+/* =============================================
+   BOTÓN DE CIERRE PARA MÓVIL (X)
+   ============================================= */
+.mobile-close {
+  display: none;
+  position: fixed;
+  top: 16px;
+  right: 20px;
+  z-index: 999;
+}
+
+.close-btn-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: var(--surface);
+  border: 1px solid var(--surface2);
+  border-radius: 50%;
+  color: var(--text);
+  font-size: 22px;
+  font-weight: 300;
+  text-decoration: none;
+  transition: all 0.28s ease;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+.close-btn-mobile:hover {
+  background: var(--green);
+  color: #000;
+  transform: scale(1.05);
+  border-color: var(--green);
+}
+
+/* Mostrar solo en móvil */
+@media (max-width: 720px) {
+  .mobile-close {
+    display: block;
+  }
+}
+
+/* En desktop, ocultar la X y mostrar el link normal */
+@media (min-width: 721px) {
+  .mobile-close {
+    display: none !important;
+  }
+}
+/* =============================================
+   FIX: Botón de contacto
+   ============================================= */
+.contact .btn {
+  color: #000 !important;
+  background: var(--green) !important;
+}
+
+.contact .btn:hover {
+  background: var(--green-dim) !important;
+  color: #000 !important;
+}

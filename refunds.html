@@ -11,10 +11,18 @@
 <body>
   <header>
     <div class="logo">DV</div>
-    <nav>
-      <a href="index.html">← Back to Home</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="main-nav">
+      <a href="index.html" class="back-home">← Back to Home</a>
     </nav>
   </header>
+
+  <!-- ===== BOTÓN DE CIERRE PARA MÓVIL (X) ===== -->
+  <div class="mobile-close">
+    <a href="index.html" class="close-btn-mobile" aria-label="Close and return to home">✕</a>
+  </div>
 
   <section class="policy">
     <h2>Refund Policy</h2>
@@ -41,5 +49,7 @@
       <a href="refunds.html">Refund Policy</a>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
