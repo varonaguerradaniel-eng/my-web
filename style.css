@@ -672,3 +672,231 @@ footer .footer-links a:hover { color: #fff; }
   .loader span { animation: none; opacity: 1; }
   .fade-in { transition: none; opacity: 1; transform: none; }
 }
+
+/* =============================================
+   ADDITIONAL SERVICES (completamente aislado)
+   ============================================= */
+.add-services {
+  margin-top: 72px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.add-services h3 {
+  font-size: clamp(18px, 2.8vw, 24px);
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text);
+  text-align: center;
+}
+
+.services-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: left;
+}
+.services-table th,
+.services-table td {
+  padding: 13px 20px;
+  border-bottom: 1px solid var(--surface2);
+}
+.services-table th {
+  color: var(--green);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: var(--surface);
+  text-align: left;
+}
+.services-table td {
+  color: var(--muted);
+}
+.services-table tr:last-child td {
+  border-bottom: none;
+}
+.services-table tbody tr:hover td {
+  background: rgba(255,255,255,.02);
+  color: #fff;
+}
+.services-table .price-cell {
+  color: var(--green);
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Responsive Additional Services */
+@media (max-width: 600px) {
+  .add-services {
+    max-width: 100%;
+    padding: 0 12px;
+  }
+  .services-table th,
+  .services-table td {
+    padding: 11px 14px;
+    font-size: 13px;
+  }
+}
+
+/* =============================================
+   SUPPORT PLANS (completamente aislado)
+   ============================================= */
+.support-plans {
+  padding: 60px 24px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+  border-top: 1px solid var(--surface2);
+}
+.support-plans h2 {
+  font-size: clamp(24px, 4vw, 36px);
+  margin-bottom: 10px;
+}
+.support-plans .sub {
+  color: var(--muted);
+  font-size: clamp(14px, 1.8vw, 17px);
+  margin-bottom: 48px;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* ===== Support Cards (con prefijo .support- para aislar) ===== */
+.support-card {
+  background: var(--surface);
+  border: 1px solid var(--surface2);
+  border-radius: 18px;
+  padding: 32px 24px 28px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+.support-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 44px rgba(0,0,0,0.55);
+}
+
+.support-card .support-plan-name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.support-card .support-plan-price {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--green);
+  margin: 12px 0 16px;
+}
+.support-card .support-plan-price small {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--faint);
+}
+.support-card .support-plan-divider {
+  height: 1px;
+  background: var(--surface2);
+  margin-bottom: 18px;
+}
+
+.support-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  margin-bottom: 24px;
+  padding: 0;
+}
+.support-card ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+.support-card ul li::before {
+  content: "✓";
+  color: var(--green);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* ===== Support CTAs ===== */
+.support-cta {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  text-align: center;
+  border-radius: 9px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.28s ease, transform 0.28s ease;
+  border: none;
+  text-decoration: none;
+  background: transparent;
+  color: var(--green);
+  border: 1.5px solid var(--green);
+}
+.support-cta:hover {
+  background: rgba(0,255,153,0.08);
+  transform: translateY(-2px);
+}
+.support-cta.support-primary {
+  background: var(--green);
+  color: #000;
+  border-color: var(--green);
+}
+.support-cta.support-primary:hover {
+  background: var(--green-dim);
+}
+
+/* ===== Support Featured (aislado) ===== */
+.support-card.support-featured {
+  border-color: var(--green);
+  box-shadow: 0 0 0 1px var(--green), 0 18px 44px rgba(0,255,153,0.08);
+}
+.support-card.support-featured:hover {
+  box-shadow: 0 0 0 1px var(--green), 0 22px 54px rgba(0,255,153,0.15);
+}
+
+/* ===== Support Badge (aislado) ===== */
+.support-badge {
+  display: inline-block;
+  background: var(--green);
+  color: #000;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+  align-self: flex-start;
+}
+
+/* ===== Support Responsive ===== */
+@media (max-width: 700px) {
+  .support-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+}
+@media (max-width: 460px) {
+  .support-grid {
+    max-width: 100%;
+  }
+  .support-card {
+    padding: 24px 18px;
+  }
+}
